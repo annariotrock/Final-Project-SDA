@@ -1,0 +1,68 @@
+;MrBuggy 3;;;
+;Nr strony w specyfikacji, gdzie jest defekt lub nieœcis³oœæ;Co jest defektem lub nieœcis³oœci¹?;Co nale¿y zrobiæ?/Jak powinno byæ?;
+1;3;"W wersji dokumentu 0.3 z dn. 05.02.2015 r. w komentarzu wymieniony jest ""harmonogram"" jako czêœæ specyfikacji. Brak harmonogramu w specyfikacji. ";Ustaliæ, czy ostatecznie ma byæ do³¹czony harmonogram. ;
+2;3;"W wersji dokumentu 0.4 z dn. 10.02.2015 r. w komentarzu wymieniony jest ""GUI czêœci serwerowej"" - brak sprecysowanego GUI w specyfikacji. ";Sprecyzowaæ GUI.;
+3;4;"""Tryb cz³onka dru¿yny - tryb pracy aplikacji dla uczestnika Mistrzostw
+w kategorii dru¿ynowej z prawami ograniczonymi do szukania defektów"" - ten tryb ogranicza jedynie prawo do zg³aszania, a nie szukania defektów. ";"Zmieniæ ""szukania"" na ""zg³aszania"".";
+4;5 vs. 13 ;"""Instalator aplikacji - program, który zainstaluje aplikacjê MrBuggy 3
+w œrodowisku docelowym"" (str.5) vs. ""Nie jest wymagany instalator aplikacji. MrBuggy 3 ma byæ aplikacj¹ przenoœn¹, która ma byæ dostarczona w postaci archiwum  'zip'"" (str.13) - sprzeczne informacje. ";Domyœlnie: nie bêdzie wymagany instalator aplikacji.;
+5;6;"B³êdna nazwa aplikacji: ""MrBuggy 2015"".";Zmieniæ na MrBuggy 3 ;
+6;6;"""Wymagane s¹ cztery wersje aplikacji klienckiej"" - w treœci specyfikacji dot. wersji aplikacji s¹ natêpnie wymenione tylko trzy wersje. ";Ustaliæ, ile ma byæ wersji.                                                                                               Domyœlnie: trzy wersje demonstracyjna, koñcowa, publiczna.;
+7;6 vs. 13;"""W aplikacji powinno znajdowaæ siê jedno zadanie testowe"" (str. 6) vs. Opis dwóch zadañ zamieszczonych w wersji demonstracyjnej - sprzecznoœæ. ";Wymagane jest doprecyzowanie iloœci zadañ w wersji demonstracyjnej aplikacji.;
+8;7;"""Wœród zamieszczonych zadañ nie mo¿e siê znaleŸæ zadanie z wersji demonstracyjnej (opisane poni¿ej)"" - brak opisu w póŸniejszej czêœci specyfikacji.";Wymaga sprecyzowania przez PO.;
+9;7;Nieokreœlona wymagana wersja œrodowiska Windows: 32-bitowa czy 64-bitowa. ;Domyœlnie: 32-bitowa wersja.;
+10;7 vs. 10/11;"""Dane z czêœci klienckiej dostarczane s¹ do czêœci serwerowej w postaci
+pliku tekstowego"" (str. 7) vs. ""Po wciœniêciu przycisku Zakoñcz wszystkie dane dotycz¹ce u¿ytkownika oraz rozwi¹zanych przez niego zadañ testowych eksportowane s¹ do pliku binarnego"" (str.10/11) - sprzeczne informacje. ";Domyœlnie: do pliku tekstowego.;
+11;7 vs. 11;"""Jêzyk programowania oraz baza danych urzyta (pisownia oryginalna) podczas tworzenia aplikacji nie s¹ zdefiniowane. Ich wybór jest pozostawiony Wykonawcy zlecenia"" (str. 7) vs. ""Aplikacja serwerowa ma zostaæ stworzona przywykorzystaniu jêzyka Java7"" (str.11) - sprzeczne informacje. ";Domyœlnie: Java7.;
+12;8;"""Defekty te mog¹ nale¿eæ do grup: defektów funkcjonalnych, defektów bezpieczeñstwa, defektów u¿ytecznoœci"" - defekty u¿ytecznoœci to równie¿ defekty funkcjonalnoœci (ten sam rodzaj defektu). ";Wymagane przekazanie przez PO w³aœciwej listy defektów.;
+13;8 vs. 11;"""W aplikacji dostêpnych ma byæ nie mniej ni¿ 15 zadañ (problemów)"" (str. 7) vs. schemat interfesu u¿ytkownika czêœci klienckiej zawiera wy³acznie 12 zadañ (str.11). ";Ustaliæ, ile ma byæ zadañ w wersji klienckiej, a ile w wersji publicznej (wg specyfikacji mog¹ siê ró¿niæ iloœci¹ zadañ).                                                                                               Domyœlnie: ka¿da wersja z co najmniej 15. zadaniami.;
+14;8, 10/11;"""Wybór trybu pracy dokonywany jest podczas logowania do aplikacji"" - w specyfikacji brakuje informacjii dot. procesu logowania. ";Poprosiæ o sprecyzowanie informacji dot. procesu logowania. ;
+15;8;"""Nie mo¿na zmieniæ trybu pracy w trakcie jej dzia³ania"" - wymaga doprecyzowania, czy jest mozliwoœæ zmiany trybu pracy po przelogowaniu siê w aplikacji. ";Doprecyzowaæ mo¿liwoœæ zmiany trybu pracy po przelogowaniu. ;
+16;8;"""Aplikacja nie mo¿e utraciæ danych w przypadku niespodziewanego jej
+zamkniêcia"" - brak informacji dot. procedury w przypadku utraty danych ww. warunkach. ";Ustaliæ, jaka powinna byæ procedura w przypadku utraty danych w trakcie niespodziewanego zamkniêcia aplikacji.;
+17;8/9;"""(...) przypadku niespodziewanego jej zamkniêcia. Kopia zapasowa ma byæ tworzona po ka¿dorazowym klikniêciu
+w przycisk “Znalaz³em defekt”. Ma przyjmowaæ format pliku binarnego, który
+zostanie wczytany po ponownym otwarciu aplikacji - brak informacji dot. sposobu zapisu danych.";Ustaliæ, czy u¿ytkownik ma samodzielnie zapisywaæ dane, czy te¿ aplikacja zapisze je automatycznie.;
+18;9;"""Kolejnoœæ zadañ wyœwietlana w czêœci klienckiej powinna byæ losowa"" - brak informacji, czy dotyczy to zarówno kategorii indywidualnej oraz dru¿ynowej. Brak jasnego wyk³adnika, ¿e takie jest wymaganie, co sugeruje zwrot ""powinna"".  ";Sprecyzowaæ, czy i w jakich warunkach kolejnoœæ wyœwietlania zadañ ma byæ losowa. ;
+19;9;"""Aplikacja ma automatycznie oceniaæ poprawnoœæ zaraportowanych defektów"" - brak szczegó³owego opisu procesu raportowania, co uniemo¿liwia zaplanowanie funkcjonalnoœci automatycznej oceny przesy³anych zadañ.";Poprosiæ PO o opis  procesu raportowania. ;
+20;9;"""Rejestrowaæ wszystkie czynnoœci (jak na przyk³ad poprawnie odebrany raport, niepoprawnie odebrany raport, poprawnie oceniony raport itd.) w dzienniku zdarzeñ czêœci serwerowej"" - niresprecyzowane pojêcia. Co ma oznaczaæ ""poprawnie"" i ""niepoprawnie""?";"Ustaliæ zakres pojêæ ""poprawnie"" i ""niepoprawnie"".";
+21;10;"""Pole 'Czas' - wyœwietla czas do zakoñczenia rundy (format: gg:mm:ss;
+godzina, minuta, sekunda, milisekunda)"" - brak wymienionych milisekund w formacie wyœwietlania czasu.";Doprecyzowaæ format wyœwietlania czasu.;
+22;10;"""Zasady numeracji zadañ s¹ opisane poni¿ej"" - brak opisu numeracji zadañ.";Dodaæ opis numeracji zadañ.;
+23;10;"""Pole 'Opis problemu' - zawiera ogóln¹ informacjê na temat zadania
+wyœwietlonego w polu “Zadania” wraz z iloœci¹ punktów za dane zadanie"" - na schemacie interfejsu u¿tkownika w polu 'opis problemu' nie ma informacji o iloœci punktów za dane zadanie. ";Ustaliæ, czy informacja o iloœci punktów za dane zadanie ma siê znajdowaæ w polu 'opis problemu'. ;
+24;10;"""Zadania bez udzielonej odpowiedzi, z udzielon¹ odpowiedzi¹ i aktualnie wyœwietlone musz¹ siê odznaczaæ innym kolorem"" - brak informacji o kolorach przydzielonych do danych rodzajów zadañ.  ";Ustaliæ, jakie kolory maj¹ byæ przydzielone do danych rodzajów zadañ.;
+25;10;"""Przyciski nawigacyjne - 'Nastêpne' i 'Poprzednie' umo¿liwiaj¹ przeniesienie
+siê do odpowiednio bie¿¹cego, nastêpnego i poprzedniego zadania - b³¹d logiczny: nie mo¿na przenosiæ siê do bie¿¹cego zadania, skoro w nim siê ju¿ jest = dwa przyciski, trzy funkcjonalnoœci. ";Usun¹æ z opisu informacjê o opcji przeniesienia do siê do nie¿¹cego zadania.;
+26;10;"""Ka¿dorazowo po klikniêciu  przycisku ' Zaraportuj defekt'  (…) wysy³any jest
+raport defektu do czêœci serwerowej aplikacji - na tym etapie u¿ytkownik  nie wype³nia jeszcze raportu defektu, a zatem nie ma treœci do wys³ania.";Doprecyzowaæ ten etap raportowania. ;
+27;10;"""Przycisk 'Zaraportuj defekt' - Funkcja ta jest dostêpna we wszystkich trybach pracy aplikacji"" - nieœcis³oœæ: ta funkcja jest niedostêpna w trybie cz³onka dru¿yny.";Usuniêcie nieœcis³oœci.;
+28;10;"Funkcjonalnoœæ przycisku  ""Zakoñcz"" w aplikacji klienckiej zosta³a opisana jako zakoñczenie pracy nad wszystkimi zadaniami i wys³anie odpowiedzi do oceny. Przy punkt wczeœniejszy traktuje o wysy³aniu raportów ka¿dorazowo po rozwi¹zaniu zadania - nieœcis³oœæ.";Doprecyzowanie nieœcis³oœci. ;
+29;11;Nieprecyzyjne sformu³owanie, ¿e okno aplikacji powinno byæ estetyczne. ;"Sprecyzowaæ pojêcie ""estetyczne"".";
+30;10 vs. 11;"Dysonans w nazewnictwie i zakresie - ""opis problemu"", ""zaraportuj defekt"" (str. 10) vs. ""opis zadania"", ""znalaz³em defekt"" (str. 11)"".";Ujednoliciæ nomenklaturê i zakres.;
+31;11;"""W oknie aplikacji musi siê znaleŸæ ikona MrBuggy 3"" - brak szczegó³owych informacji o tym, w którym miejscu w oknie, w jakiej formie, wielkoœci.";Uszczegó³owiæ informacje dot.obecnoœci ikony MrBuggy3 w oknie aplikacji. ;
+32;10/11;"Brak opisu przycisku ""Status po³¹czenia"" w opisie interfejsu u¿ytkownika. Obecnoœæ przycisku w schemacie interfejsu u¿ytkownika czêœci klienckiej.";Ustaliæ, czy uzupe³niæ opis przycisku czy usun¹æ go ze schematu interfejsu.;
+33;12;"""Wielkoœæ pliku z kopi¹ zapasow¹ aplikacji klienckiej nie mo¿e przekraczaæ
+2MB1"" - niejasnoœæ; nietypowa kombinacja znaków.";Ustaliæ, ile miejsca na dysku ma zajmowaæ weersja kliencka aplikacji.;
+34;12;Wydajnoœæ aplikacji liczona z podanego wzoru. B³êdny wzór na wydajnoœæ.;Ustaliæ w³aœciwy wzór liczenia wydajnoœci. ;
+35;12;"""t - œredni czas odpowiedzi interfejsu
+ma byæ wiêksza od 10000"" - niesprecyzowana jednostka.";Sprecyzowaæ jednostkê.;
+36;12;"""login musi sk³adaæ siê z 2 do 8 znaków i zawieraæ przynajmniej jedn¹ ma³¹
+literê, jedn¹ wielk¹ literê, jedn¹ cyfrê i jeden znak specjalny"" - nieprawid³owy minimalny zakres liczby znaków; brak mo¿liwoœci spe³nienia warunków przy obecnym zakresie.";Zmieniæ  minimaln¹ liczbê znaków loginów ;
+37;12/13;"""has³o nie mo¿e zawieraæ bia³ych znaków ani polskich znaków dialektycznych"" - b³¹d semantyczny =  znaków ""dialektycznych"".";Domyslnie: diakrytycznych;
+38;12;"""has³o musi sk³adaæ siê z co najmniej 20 znaków"" - zbyt d³ugie has³o; brak sprecyzowanej maksymalnej liczby znaków (""co najmniej 20"").";Doprecyzowaæ, czy has³o musi byæ tak rozbudowane. Ustaliæ maksymaln¹ liczbê znaków.  ;
+39;12/13;Niejednoznacznoœæ w zakresie wymagañ bezpieczeñstwa dla aplikacji klienckiej. ;Domyslnie: ustalenie wymagañ i ich podzia³ na czêœæ klienck¹ i serwerow¹.;
+40;13;Brak opisu procedury zmiany has³a ;Ustaliæ procedurê zmiany has³a.;
+41;13;"""konto musi zostaæ zablokowane po 3 krotnym wpisaniu b³êdnego has³a lub
+jego czêœci"" - brak logiki w dopowiedzeniu ""jego czêœci"".";"Domyœlnie: usun¹æ ""jego czêœci"".";
+42;13;"""tokeny do konta maj¹ byæ generowane losowo"" - brak wytycznych dot. sposobu generowania i u¿ywania tokenów.";"Sprecyzowaæ, w jaki sposób tokeny bêd¹ generowane i wysy³ane; na jakim etapie logowania bêb¹ u¿ywane.";
+43;13;"""prze³¹czanie pomiêdzy zadaniami nie mo¿e byæ d³u¿sze ni¿ 1 sekunda"" - to wymaganie wydajnoœciowe, a jest zawarte w wymaganiach niezawodnoœci. ";Przenieœæ wymaganie do sekcji wydajnoœciowej. ;
+44;13;"Instalacja aplikacji - b³êdna nomenklatura: ""plik wykonawczy"". ";"Zmiana nomenklatury na ""plik wykonywalny"". ";
+45;14;"""defekty trywialne (od 1 do 2 pkt); defekty normalne (od 3 do 4 pkt); defekty krytyczne (od 4 do 6 pkt)"" - nieœcis³oœci w wartoœciach przegowych defektów normalnych/krytycznych. ";Sugerowana zmiana wartoœci brzegowych. ;
+46;14 ;Brak opisu, klasyfikacji, definicji b³edów trywialnych, normalnych i krytycznych.;Sprecyzowaæ pojêcia i ich klasyfikacjê. ;
+47;4-14;"B³êdy ortograficzne i interpunkcyjne np. ""urzyta"". ";Poprawiæ b³êdy ortograficzne i interpunkcyjne. ;
+;;;;
+;;;;
+;;;;
+;;;;
+;;;;
