@@ -1,0 +1,93 @@
+1PK	Członek drużyny nie może raportować defektów. 	Aplikacja włączona, użytkownik jest zarejestrowany i zalogowany jako członek drużyny.	1	Znalezienie defektu.	Defekt znaleziony.
+			2	Próba zaraportowania defektu.	Możliwość zaraportowania defektu nie jest możliwa/Komunikat o niedostępności tej funkcjonalności.
+2PK	Poprawne wyświetlanie aplikacji w rozdzielczości ekranu monitora 1024x768.	Aplikacja jest włączona, ustawienia systemowe dostępne, rozdzielczość ekranu monitora 1024x768 jest dostępna.	1	Ustawienie rozdzielczość ekranu monitora na 1024x768.	Rozdzielczość ustawiona.
+			2	Sprawdzeni, czy aplikacja "mieści się" w całości na ekranie monitora.	Aplikacja wyświetla się na ekranie monitora w rozdzielczości 1024x768 (bez skrolowania).
+3PK 	W wersji demonstracyjnej dostępne jest tylko jedno zadanie.	Dostępna i uruchomiona wersja demonstracyjna aplikacji.	1	Rozpoczęcie rozwiązywania zadania.	Zadanie jest rozpoczęte.
+			2	Zakończenie zadania.	Zadanie jest ukończone.
+			3	Próba uruchomienia kolejnego zadania.	Kolejne zadanie nie uruchamia się. Brak kolejnego zadania.
+4PK	Możliwość ręcznego importu oraz eksportu danych.	Użytkownik zalogowany do aplikacji. 	1	Kliknięcie w opcję importu danych do folderu. 	Dane zaimportowane do folderu.
+			2	Kliknięcie w opcję eksport danych z folderu. 	Dane wyeksportowane z folderu. 
+5PK	Ilość dostępnych zadań w aplikacji klienckiej.	Użytkownik zalogowany do aplikacji. Użytkownik rozpoczął pracę w aplikacji. 	1	Otwarcie listy zadań. 	Lista zadań wyświetlona w bocznym menu po prawej stronie okna. 
+			2	Sprawdzenie, czy na liście znajduje się co najmniej 15 zadań. 	Na liście dostępnych jest co najmniej 15 zadań.
+6PK	"Logowanie przy użyciu loginu i hasła.
+"	Zainstalowana aplikacja MrBuggy 3. 	1	Uruchomienie aplikacji.	Aplikacja uruchomiona.
+			2	Wpisanie w polu "login" sekwencji, która zawiera mniej niż 8 znaków. Zatwierdzenie kroku. 	Wyświetlenie informacji o zbyt małej ilości znaków. Użytkownik niezalogowany. 
+			3	Wpisanie w polu "login" sekwencji, która nie zawiera małej litery. Zatwierdzenie kroku. 	Wyświetlenie informacji o wymaganiach, jakie musi spełaniać login. Użytkownik niezalogowany. 
+			4	Wpisanie w polu "login" sekwencji, która nie zawiera dużej litery. Zatwierdzenie kroku. 	Wyświetlenie informacji o wymaganiach, jakie musi spełaniać login. Użytkownik niezalogowany. 
+			5	Wpisanie w polu "login" sekwencji, która nie zawiera cyfry . Zatwierdzenie kroku. 	Wyświetlenie informacji o wymaganiach, jakie musi spełaniać login. Użytkownik niezalogowany. 
+			6	Wpisanie w polu "login" sekwencji, która nie zawiera znaku specjalnego. Zatwierdzenie kroku. 	Wyświetlenie informacji o wymaganiach, jakie musi spełaniać login. Użytkownik niezalogowany. 
+			7	Wpisanie loginu, który ma przynajmniej 8 znaków i zawiera jedną małą literę, jedną wielką literę, jedną cyfrę, jeden znak specjalny. Zatwierdzenie kroku.	Akceptacja loginu.
+			8	Wpisanie hasła niespełniającego przynajmniej jednego z warunków: 20 znaków, przynajmniej jedna mała litera, jedna wielka litera, jedna cyfra, jeden znak specjalny.	Niezaakceptowane hasło. Użytkownik niezalogowany. 
+			9	Wpisanie hasła złożonego z co najmniej 20. znaków, zawierającego przynajmniej jedną małą literę, jedną wielką literę, jedną cyfrę, jeden znak specjalny.	Zaakceptowane hasło. Użytkownik zalogowany. 
+7PK	Interfejs aplikacji w całości w polskim języku. 	Uruchomiona aplikaja. Użytkownik zalogowany. 	1	Przejście przez wszystkie zadania i elementy w aplikacji.	Wszystkie zadania i elementy aplikacji w języku polskim. W aplikacji nie ma błędów ortograficznych,wyświetlają się  prawidłowe polskie znaki.
+8PK	Prawidłowe wyświetlanie listy zadań i przycisków nawigacyjnych przy zadaniach. 	Uruchomiona plikacja. Użytkownik zalogowany.  	1	Otwarcie strony startowej.	Strona startowa jest otwarta. Widoczne jest okno "Zadania" oraz "Menu boczne" po prawej stronie.
+			2	Przeklikanie kolejno zadań z listy z wykorzystaniem menu bocznego. 	Zadania wyświetlają się z listy w menu bocznym. 
+			3	Przeklikanie kolejno zadań z wykorzystaniem przycisków nawigacyjnych "Następne" i "Poprzednie".	Przyciski nawigacyjne "Następne" i "Poprzednie" działają wg przeznaczenia.
+9PK	Oznaczenie kolorystyczne zadań.	Uruchomiona aplikacja. Użytkownik zalogowany.Wybrany tryb pracy. Widoczna "Lista zadań".	1	Wyświetlenie bieżącego zadania.	Bieżące zadanie jest wyświetlone w kolorze przypisanym do zadań bieżących. 
+			2	Przejście do kolejnego zadania, bez udzielenia odpowiedzi na bieżące. 	Kolejne zadanie wyświetlone. Poprzednie, bez udzielonej odpowiedzi, wyświetla się w kolorze przypisanym dla zadań bez odpowiedzi. 
+			3	Przejście do kolejnego zadania po udzieleniu odpowiedzi na bieżące. 	Kolejne zadanie wyświetlone. Poprzednie, z udzieloną odpowiedzią, wyświetla się w kolorze przypisanym dla zadań z udzieloną odpowiedzią. 
+10PK	Tworzenie automatycznie kopii zapasowej po kliknięciu w przycisk "zaraportuj", w formie pliku binarnego.	Uruchomiona aplikacja. Otwarte okno zadania.	1	Naciśnięcie przycisku „Zaraportuj defekt”.	Przycisk aktywny. 
+			2	Wyłączenie i ponowne uruchomienie aplikacji.	Aplikacja uruchamia się i wczytany zostaje plik z kopią zapasową w formie pliku binarnego.
+11PK	Korzystanie z przycisków nawigacyjnych zadań "Następne" i "Poprzednie".	Uruchomiona aplikacja. Użytkownik zalogowany.	1	Uruchomienie pierwszego zadania.	Pierwsze zadanie uruchomione. 
+			2	Kliknięcie w przycisk "Następne"	Następne zadanie zostaje uruchomione.
+			3	Kliknięcie w przycisk "Poprzednie". 	Użytkownik zostaje przeniesiony do poprzedniego zadania.
+12PK	Tworzenie kopii zapasowej po zaraportowaniu defektu.	Aplikacja uruchomiona w trybie kapitana drużyny lub zawodnika indywidualnego.	1	Klinkięcie w przycisk "Znalazłem defekt".	Kopia zapasowa została utworzona.
+13PK	Zablokowanie konta po wpisaniu 3 błędnych haseł.	Zainstalowana aplikacja. Użytkownik niezalogowany do aplikacji.	1	Uruchomienie aplikacji.	Aplikacja uruchomiona.
+			2	Wpisanie poprawnego loginu w oknie logowania.	Poprawny login jest wpisany. 
+			3	Trzykrotne wpisanie błędnego hasła.	Konto jest zablokowane. 
+			4	Wpisanie poprawnego hasła. 	Konto jest zablokowane. 
+14PK	Poprawny czas przełączania pomiędzy zadaniami.	Aplikacja uruchomiona. Użytkownik zalogowany. Otwarte okno zadania wyższego od pierwszego. 	1	Kliknięcie przycisku "Poprzednie".	Przełączenie do poprzedniego zadania w czasie nie dłuższym niż 1 sekunda.
+			2	Kliknięcie przycisku "Następne"	Przełączenie do następnego zadania w czasie nie dłuższym niż 1 sekunda.
+15PK	Poziom pamięci operacyjnej zużywany przez aplikację. 	Aplikacja zainstalowana. 	1	Uruchomienie menadżera zadań i zakładki procesy. 	Menadżer zadań uruchomiony na zakładce procesy. 
+			2	Sprawdzenie zużycia pamięci RAM aplikacji.	Zużycie nie większe niż 100 MB.
+16PK	Kontynuowanie pracy w aplikacji po utracie połączenia sieciowego.	Aplikacja uruchomiona. Dowolne zadanie otwarte.	1	Odłączenie urządzenia od sieci.	Urządzenie odłączone od sieci. 
+			2	Kontynuowanie pracy w aplikacji. 	Dalsza praca w aplikacji jest możliwa. Żadne dane i dostępy nie zostały utracone. 
+17PK	"Losowość zadań wyświetlanych w części klienckiej.
+"	Poprawne zainstalowana aplikacja klienckiej. Dostęp do minimum  dwóch kont użytkownika.	1	Zalogowanie się do pierwszego profilu użytkownika. 	Pierwszy profil użytkownika jest dostępny. 
+			2	Wyświetlenie zadań w profilu nr 1. 	"Zadania wyświetlają się losowo. 
+"
+			3	Zalogowanie się do drugiego profilu użytkownika. 	Drugi profil użytkownika jest dostępny. 
+			4	Wyświetlenie zadań w profilu nr 2. 	"Zadania wyświetlają się losowo. 
+"
+			5	Porównanie, czy  kolejność  zadań z logowania na profil pierwszy jest inna od tych z profilu drugiego.	Kolejność  zadań z logowania na profil pierwszy jest inna od tych z profilu drugiego.
+18PK	Poprawne wyświetlanie czasu.	Użytkownik zalogowany do aplikacji. Interfejs zadań włączony.	1	Sprawdzenie pola “Czas” - czy wyświetla poprawnie czas do zakończenia rundy w formacie: gg:mm:ss; godzina, minuta, sekunda. 	Poprawne wyświetlanie czasu w polu "Czas" w formacie: gg:mm:ss; godzina, minuta, sekunda.
+19PK	W oknie "Zadania" wyświetla się nr zadania w polu "Numer zadania".	Uruchomiona aplikacja. Użytkownik zalogowany.	1	Włącznie okna "Zadania"	Okno "Zadania" jest uruchomione.
+			2	Sprawdzenie czy w polu "Numer zadania" wyświetlają się wartości w postaci numerów zadań. 	W polu "Numer zadania" wyświetlają się wartości w postaci numerów zadań. 
+20PK	Wersja końcowa aplikacji bez zadania z wersji demonstracyjnej.	Dostęp do wersji końcowej aplikacji oraz do wersji demonstracyjnej.	1	Sprawdzenie treści zadania w wersji demonstracyjnej.	Znane zadanie z wersji demonstracyjnej. 
+			2	Sprawdzenie treści wszystkich zadań z wersji końcowej.	Znane zadania z wersji końcowej. 
+			3	Porównanie zadania z wersji demonstracyjnej z zadaniami z wersji końcowej.	Zadania porównane. Zadania w wersji końcowej aplikacji nie zawierają zadania z wersji demonstracyjnej. 
+21PK	Tylko jeden defekt w każdym zadaniu. 	Uruchomiona aplikacja. Użytkownik zalogowany. 	1	Sukcesywne przeglądanie wszystkich zadań w aplikacji. 	Wszystkie zadania przejrzane. W każdym z nich wystąpił tylko jeden defekt.
+22PK	Trzy tryby aplikacji klienckiej - kapitana drużyny, członka drużyny, zawodnika. Wybór trybu z poziomu logowania. 	Aplikacja zainstalowana. 	1	Sprawdzenie, czy w oknie logowania dostępny jest wybór trybów. 	Wybór trybów dostępny w oknie logowania.
+			2	Próba zalogowania się do aplikacji w trybie kapitana drużyny. 	Użytkownik zalogowany w trybie kapitana drużyny. 
+			3	Próba zalogowania się do aplikacji w trybie członka drużyny. 	Użytkownik zalogowany w trybie członka drużyny. 
+			4	Próba zalogowania się do aplikacji w trybie zawodnika. 	Użytkownik zalogowany w trybie zawodnika 
+23PK	MrBuggy 3 jako aplikacja przenośna dostarczana w postaci archiwum “zip”. 	Dostęp do połączenia sieciowego	1	Próba pobrania pliku w postaci archiwum "zip" ze strony http://mrbuggy.pl/mrbuggy3/	Pobranie pliku w postaci archiwum "zip" ze strony http://mrbuggy.pl/mrbuggy3/
+			2	Kliknięcie w opcję rozpakowania i zainstalowania pliku.	Aplikacja MrBuggy 3 rozpakowana i zainstalowana.
+24PK	Podział okna aplikacji na dwie części - okno “Zadania” oraz “Menu boczne” ułożone po prawej stronie.	Użytkownik zalogowany do aplikacji.	1	Otwarcie okna aplikacji. 	Okno aplikacji uruchomione. 
+			2	Sprawdzenie, czy okno "Zadania" znajduje się po prawej stronie. 	Okno "Zadania" znajduje się po prawej stronie.
+			3	Sprawdzenie, czy okno "Menu boczne" znajduje się po prawej stronie. 	Okno "Menu boczne" znajduje się po prawej stronie.
+25PT	Budowa menu bocznego. 	Użytkownik zalogowany do aplikacji.	1	Otwarcie okna aplikacji. 	Okno aplikacji uruchomione. 
+			2	Sprawdzenie, czy menu boczne zawiera pole: "Czas".	Menu boczne zawiera pole "Czas".
+			3	Sprawdzenie, czy menu boczne zawiera pole: "Numer zadania".	Menu boczne zawiera pole "Numer zadania".
+			4	Sprawdzenie, czy menu boczne zawiera pole: "Opis problemu".	Menu boczne zawiera pole "Opis problemu".
+			5	Sprawdzenie, czy menu boczne zawiera pole: "Lista zadań".	Menu boczne zawiera pole "Lista zadań".
+			6	Sprawdzenie, czy menu boczne zawiera pole: "Zaraportuj defekt".	Menu boczne zawiera pole "Zaraportuj defekt".
+			7	Sprawdzenie, czy menu boczne zawiera pole: "Zakończ".	Menu boczne zawiera pole "Zakończ".
+			8	Sprawdzenie, czy menu boczne zawiera pole: "Poprzednie".	Menu boczne zawiera pole "Poprzednie".
+			9	Sprawdzenie, czy menu boczne zawiera pole: "Następne".	Menu boczne zawiera pole "Następne".
+26PT	Zawartość i funkcjonalność pola “Opis problemu”.  	Użytkownik zalogowany do aplikacji.	1	Otwarcie okna aplikacji. 	Okno aplikacji uruchomione. 
+			2	Sprawdzenie, czy pole “Opis problemu” zawiera ogólną informację na temat zadania wyświetlonego w polu “Zadania”.  	Pole “Opis problemu” zawiera ogólną informację na temat zadania wyświetlonego w polu “Zadania”. 
+			3	Sprawdzenie, czy pole “Opis problemu” zawiera informację o ilości punktów za dane zadanie.	Pole “Opis problemu” informację o ilości punktów za dane zadanie.
+27PT	Funkcjonalność przycisku "Zaraportuj defekt".	Użytkownik zalogowany do aplikacji.	1	Otwarcie okna aplikacji. 	Okno aplikacji uruchomione. 
+			2	Otwarcie zadania. 	Zadanie otwarte. 
+			3	Kliknięcie  w przycisk “Zaraportuj defekt”.   	Zaraportowanie defektu aktualnie wyświetlanego w oknie “Zadania”. 
+28PT	Funkcjonalność przycisku "Zakończ". 	Użytkownik zalogowany do aplikacji.	1	Otwarcie okna aplikacji. 	Okno aplikacji uruchomione. 
+			2	Wykonanie zadań w aplikacji. 	Zadanie rozwiązane.
+			3	Kliknięcie przycisku “Zakończ". 	Aplikacja otwiera okno do potwierdzenia czynności zakończenia pracy aplikacji. 
+			4	Potwierdzenie chęci zakończenia pracy nad wszystkimi zadaniami. i wysłać odpowiedzi do oceny. 	Aplikacja kończy pracę i wysyła odpowiedzi do oceny. 
+			5	Próba cofnięcia zakończenia pracy. 	Brak możliwości cofnięcia tej czynności - można ją wykonać tylko raz. 
+29 PT 	Zawartość okna “Zadania”.  	Użytkownik zalogowany do aplikacji. 	1	Otwarcie okna aplikacji. 	Okno aplikacji uruchomione. 
+			2	Kliknięcie w dowolne zadanie. 	Wybrane zadanie wyświetla się. Możliwość znalezienia defektu.  
+30 PT 	Zmiana trybu pracy aplikacji w trakcie jej działania.	Zainstalowana aplikacja. Dostęp do co najmniej dwóch, z trzech, trybów. 	1	Zalogowanie się do aplikacji w trybie zawodnika. 	Użytkownik zalogowany w trybie zawodnika. 
+			2	Rozpoczęcie pracy w aplikacji.	Praca w aplikacji rozpoczęta. 
+			3	Próba zmiany trybu pracy bez wylogowywania się.	Brak możliwości zmiany trybu pracy w trakcie działania aplikacji. Wymagane wylogowanie. 
