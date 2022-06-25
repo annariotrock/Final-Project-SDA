@@ -1,0 +1,66 @@
+package io.cucumber.skeleton;
+
+import io.cucumber.java.After;
+import io.cucumber.java.AfterAll;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ShopStepDefs {
+    WebDriver webDriver;
+
+    @Before
+    public void iOpenBrowser() {
+        System.setProperty("webdriver.chrome.driver","C:\\WebDriver\\chromedriver_win32\\chromedriver.exe");
+        webDriver = new ChromeDriver();
+        System.out.println("Otwieram przeglądarke");
+    }
+
+    @After
+    public void iCloseBrowser() {
+        System.out.println("Zamykam przeglądarke");
+//        webDriver.close();
+    }
+//    @AfterStep
+//    public void takeScreenshot(){
+//        System.out.println("________");
+//        System.out.println("Robie skina");
+//    }
+
+
+    @When("I go to shop website")
+    public void iGoToShopWebsite() {
+        System.out.println("Wchodze na strone sklepu");
+        webDriver.get("https://react-shopping-cart-67954.firebaseapp.com/");
+
+    }
+
+    @Then("I see {int} t-shirts")
+    public void iSeeTShirts(int arg0) throws InterruptedException {
+        Thread.sleep(2000);
+//        System.out.println("Widze "+ arg0 +" koszulek" );
+        int size = webDriver.findElements(By.className("sc-124al1g-2")).size();
+        System.out.printf("Widze %s koszulek%n", size);
+        System.out.printf("Powinienem widzieć %s koszulek%n", arg0);
+        Assert.assertEquals(arg0, size);
+    }
+
+    @When("I select {string} size")
+    public void iSelectMSize(String size) {
+        webDriver.findElement(By.xpath(String.format("//span[text()='%s']", size))).click();
+        System.out.printf("Wybieram rozmiar %s%n", size);
+
+    }
+
+
+    @When("I chosse {int} item")
+    public void iChosseItem(int arg0) {
+        webDriver.findElements(By.cssSelector("button.sc-124al1g-0")).get(arg0).click();
+    }
+}
