@@ -30,7 +30,7 @@ public class ShopStepDefs {
 //    @AfterStep
 //    public void takeScreenshot(){
 //        System.out.println("________");
-//        System.out.println("Robie skina");
+//        System.out.println("Robie screen");
 //    }
 
 
@@ -47,7 +47,7 @@ public class ShopStepDefs {
 //        System.out.println("Widze "+ arg0 +" koszulek" );
         int size = webDriver.findElements(By.className("sc-124al1g-2")).size();
         System.out.printf("Widze %s koszulek%n", size);
-        System.out.printf("Powinienem widzieć %s koszulek%n", arg0);
+        System.out.printf("Powinnam widzieć %s koszulek%n", arg0);
         Assert.assertEquals(arg0, size);
     }
 
