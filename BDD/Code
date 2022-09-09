@@ -29,7 +29,7 @@ public class ShopStepDefs {
     }
 //    @AfterStep
 //    public void takeScreenshot(){
-//        System.out.println("________");
+//        System.out.println("Robie screen");
 //        System.out.println("Robie screen");
 //    }
 
